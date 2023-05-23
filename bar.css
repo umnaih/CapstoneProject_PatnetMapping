@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+@keyframes anim-lightspeed-in {
+  0% {
+    transform: translateX(-200%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.skills {
+  width: 90%;
+  max-width: 1400px;
+  height: 780px;
+  height: calc(11 * (30px + 10px) + 3 * (10px + (16px * 1) + 10px));
+  margin: 20px 0 40px;
+  font-family: "Open Sans", sans-serif;
+  color: #282828;
+  margin: auto;
+  position: relative;
+}
+
+.charts {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.chart:not(:first-child) {
+  margin-top: 18px;
+}
+
+.chart__title {
+  font-size: 40px;
+  display: block;
+  margin: 0 0 10px;
+  font-weight: bold;
+  opacity: 0;
+  animation: 5s anim-lightspeed-in ease forwards;
+}
+
+.chart__title.chart--prod {
+  animation-delay: 3.3s;
+}
+
+.chart__title.chart--design {
+  animation-delay: 4.5s;
+}
+
+.chart--horiz {
+  overflow: hidden;
+}
+.badge {
+  color: #230445;
+}
+.chart__bar {
+  height: 40px;
+  margin-bottom: 10px;
+  background: linear-gradient(to left, #9383a3, #654f7c, #230445);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 4px;
+  opacity: 0;
+  animation: 5s anim-lightspeed-in ease forwards;
+}
+
+.chart--dev .chart__bar {
+  animation-delay: 0.5s;
+}
+
+.chart--prod .chart__bar {
+  animation-delay: 3.8s;
+}
+
+.chart--design .chart__bar {
+  animation-delay: 5s;
+}
+
+.chart__label {
+  padding-left: 10px;
+  line-height: 30px;
+  color: white;
+  font-size: 20px;
+}
