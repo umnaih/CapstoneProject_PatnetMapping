@@ -1,0 +1,50 @@
+@startuml
+
+!define ICONURL https://raw.githubusercontent.com/pleo-io/assets/master/img
+
+skinparam componentStyle uml2
+
+package "HTML Code" {
+  component "<!DOCTYPE html>" as html
+  component "css/bootstrap.css" as bootstrap
+  component "style.css" as style
+  component "bar.css" as bar
+  component "card.css" as card
+}
+
+package "Home" {
+  component "Home.html" as home
+  component "ourServis" as ourServices
+  component "aboutUs" as aboutUs
+  component "visualization.html" as visualization
+}
+
+package "Components" {
+  component "navbar" as navbar
+  component "container-fluid" as containerFluid
+  component "collapse navbar-collapse" as navbarCollapse
+  component "ul.navbar-nav" as navbarNav
+  component "ul.navbar-nav" as navbarNavRight
+
+}
+
+
+
+html --> bootstrap
+html --> style
+html --> bar
+html --> card
+
+navbar --> containerFluid
+navbarCollapse --> navbarNav
+navbarCollapse --> navbarNavRight
+
+
+home --> containerFluid
+aboutUs --> containerFluid
+visualization --> containerFluid
+ourServices --> containerFluid
+
+
+
+@enduml

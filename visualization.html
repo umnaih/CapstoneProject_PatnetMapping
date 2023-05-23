@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<!-- we get inspired from these codes-->
+<!--https://codepen.io/mirandalwashburn/pen/RwPQwKo?editors=1100*/-->
+<!--https://codepen.io/siiron/pen/DpJmwK?editors=0100-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visualization</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./visualization.css" />
+  </head>
+  <script>
+    // Check if user is logged in
+    const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+    if (!isLoggedIn) {
+      // Redirect to access denied page
+      window.location.href = "./AccessDenied.html";
+    }
+    window.addEventListener("DOMContentLoaded", function () {
+      if (!sessionStorage.getItem("isLoggedIn")) {
+        window.location.href = "./AccessDenied.html"; // Redirect to the login page
+      } else {
+      }
+    });
+  </script>
+
+  <body>
+    <!-- navbar area starts-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #230445">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./index.html"
+                style="color: #e8eddf"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./Home.html#ourServis"
+                style="color: #e8eddf"
+              >
+                Our Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./Home.html#aboutUs"
+                style="color: #e8eddf"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./visualization.html"
+                style="color: #e8eddf"
+                >Visualization</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./Sign_Up.html"
+                style="
+                  color: #e8eddf;
+                  margin-left: 20px;
+                  border: 1px solid #e8eddf;
+                  padding: 10px;
+                  font-weight: bold;
+                "
+                >Sign Up / Sign In</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar area finshed-->
+
+    <!-- second navbar area starts -->
+
+    <nav class="navbar navbar-expand-lg" style="background-color: #e9e5ec">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                id="link1"
+                class="nav-link"
+                href="./RankingMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Ranking Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./PortionRateMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Portion Rate Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./ShareMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Share Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./TimeSeries.html"
+                style="color: #230445; padding: 8px 15px"
+                >Time Series</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./TwinPeakMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Twin Peak Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./BarChart.html"
+                style="color: #230445; padding: 8px 15px"
+                >Bar Chart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./Heat Map.html"
+                style="color: #230445; padding: 8px 15px"
+                >Heat Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./ScatterChart.html"
+                style="color: #230445; padding: 8px 15px"
+                >Scatter Chart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./WordCloudMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Word Cloud Map</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./FAQ.html"
+                style="
+                  color: #230445;
+                  font-weight: bold;
+                  margin-right: 100px;
+                  border: 1px solid #230445;
+                  padding: 10px;
+                "
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- patent starts-->
+    <section class="lp">
+      <div class="col">
+        <div class="blog__content">
+          <h1>Patent Mapping</h1>
+
+          <div class="blog__mainText">
+            <p>
+              <span class="blog__mainText__letter">P</span>atent Map is a visual
+              expression of the total analysis results of patents, which helps
+              in understanding complex and diverse patent information easily and
+              effectively.<br /><br />
+              The patent map is created by collecting relevant patent
+              information from a specific technology field, processing it, and
+              analyzing it.<br /><br />
+              Patent maps can offer several advantages for various purposes,
+              including administering and planning, technology management, and
+              researching/technology promoting.<br /><br />
+            </p>
+            <p>
+              For administrative and planning purposes, patent maps can help
+              identify development trends, conduct market research, and
+              determine the relationships between companies. <br /><br />
+              In terms of technology management, patent maps can be useful in
+              identifying possible infringement, analyzing claims, and setting
+              up a new patent application direction. For research and technology
+              promotion purposes, patent maps can help in identifying technology
+              trends, analyzing technology gaps,and understanding technology
+              relations.<br /><br />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <img src="./data/Product quality-amico.png" class="blog__img" />
+      </div>
+    </section>
+
+    <!-- patent ends-->
+
+    <div class="all">
+      <section class="lp">
+        <div class="col">
+          <div class="content-chart">
+            <ul class="administration">
+              <li>
+                <ul class="director">
+                  <li>
+                    <a href="#"><span>Patent Mapping</span></a>
+                    <ul class="subdirector">
+                      <li class="department dep-a">
+                        <a href="#"><span>Quantitative Analysis Map</span></a>
+                        <ul class="sections">
+                          <li class="section">
+                            <a href="./RankingMap.html"
+                              ><span>Ranking Map</span></a
+                            >
+                          </li>
+                          <li class="section">
+                            <a href="./PortionRateMap.html"
+                              ><span>Portion Rate Map</span></a
+                            >
+                          </li>
+                          <li class="section">
+                            <a href="./ShareMap.html"><span>Share Map</span></a>
+                          </li>
+                          <li class="section">
+                            <a href="./TimeSeries.html"
+                              ><span>Time Series</span></a
+                            >
+                          </li>
+                          <li class="section">
+                            <a href="./TwinPeakMap.html"
+                              ><span>Twin Peak Map </span></a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="department dep-b">
+                        <a href="#"><span>Qualitative Analysis Map</span></a>
+                        <ul class="sections">
+                          <li class="section">
+                            <a href="./BarChart.html"><span>Bar Chart</span></a>
+                          </li>
+                          <li class="section">
+                            <a href="./ScatterChart.html"
+                              ><span>Scatter Chart</span></a
+                            >
+                          </li>
+                          <li class="section">
+                            <a href="./Heat Map.html"><span>Heat Map</span></a>
+                          </li>
+                          <li class="section">
+                            <a href="./WordCloudMap.html"
+                              ><span>Word Cloud Map</span></a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Quantitative Analysis Map starts-->
+
+    <!-- footer starts-->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>Yıldız, Çırağan Cd., 34349 Beşiktaş/İstanbul</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>+90 124 451 566</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2023, All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends-->
+  </body>
+</html>

@@ -1,0 +1,49 @@
+@startuml
+
+skinparam componentStyle uml2
+
+package "Navbar" {
+  component "Home" as Home
+  component "Our Services" as ourServices
+  component "About Us" as Aboutus
+  component "Visualization" as Visualization
+  component "Sign Up / Sign In" as signin
+}
+
+package "SecondNavbar" {
+  component "Ranking Map" as Ranking
+  component "Portion Rate Map" as Portion
+  component "Share Map" as Share
+  component "Time Series" as Time
+  component "Twin Peak Map" as Twin
+  component "Bar Chart" as Bar
+  component "Heat Map" as Heat
+  component "Scatter Chart" as Scatter
+  component "Word Cloud Map" as Word
+  component "FAQ" as FAQ
+}
+
+component "Quantitative Ranking Map" as card {
+  component "Quantitative-Ranking-Map.html" as iframe
+}
+Navbar --> Home
+Navbar --> ourServices
+Navbar --> Aboutus
+Navbar --> Visualization
+Navbar -->signin
+
+SecondNavbar --> Ranking 
+SecondNavbar --> Portion 
+SecondNavbar --> Share 
+SecondNavbar --> Time 
+SecondNavbar --> Twin 
+SecondNavbar --> Bar 
+SecondNavbar --> Heat 
+SecondNavbar --> Scatter 
+SecondNavbar --> Word 
+SecondNavbar --> FAQ
+
+card --> iframe
+
+
+@enduml

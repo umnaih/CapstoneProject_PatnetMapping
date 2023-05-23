@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<!-- we get inspired from these website-->
+<!--https://codepen.io/mirandalwashburn/pen/RwPQwKo?editors=1100*/-->
+<!--https://codepen.io/siiron/pen/DpJmwK?editors=0100-->
+<!--https://codepen.io/baahubali92/pen/LMBLwp?editors=1100-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./FAQ.css" />
+  </head>
+  <body>
+    <!-- navbar area starts-->
+    <nav class="navbar navbar-expand-lg" style="background-color: #230445">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./index.html"
+                style="color: #e8eddf"
+              >
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./Home.html#ourServis"
+                style="color: #e8eddf"
+              >
+                Our Services
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./Home.html#aboutUs"
+                style="color: #e8eddf"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./visualization.html"
+                style="color: #e8eddf"
+                >Visualization</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./Sign_Up.html"
+                style="
+                  color: #e8eddf;
+                  margin-left: 20px;
+                  border: 1px solid #e8eddf;
+                  padding: 10px;
+                  font-weight: bold;
+                "
+                >Sign Up / Sign In</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar area finshed-->
+
+    <!-- second navbar area starts -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #e9e5ec">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                href="./RankingMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Ranking Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./PortionRateMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Portion Rate Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./ShareMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Share Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./TimeSeries.html"
+                style="color: #230445; padding: 8px 15px"
+                >Time Series</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./TwinPeakMap.html"
+                style="color: #230445; padding: 8px 15px"
+                >Twin Peak Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./BarChart.html"
+                style="color: #230445; padding: 8px 15px"
+                >Bar Chart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./Heat Map.html"
+                style="color: #230445; padding: 8px 15px"
+                >Heat Map</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./ScatterChart.html"
+                style="color: #230445; padding: 8px 15px"
+                >Scatter Chart</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./WordCloudMap.html"
+                style="color: #230445; padding: 8px 15px"
+              >
+                Word Cloud Map</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="./FAQ.html"
+                style="
+                  color: #230445;
+                  font-weight: bold;
+                  margin-right: 100px;
+                  border: 1px solid #230445;
+                  padding: 10px;
+                "
+                >FAQ</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- second navbar area ends -->
+    <!-- FAQ starts -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="row">
+          <!-- ***** FAQ Start ***** -->
+          <div class="faq-title text-center pb-3">
+            <h2>FAQ</h2>
+          </div>
+          <div class="col-md-6">
+            <div class="faq" id="accordion">
+              <div class="card">
+                <div class="card-header" id="faqHeading-1">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-1"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-1"
+                      onclick="toggleCardBody(1)"
+                    >
+                      <span class="badge">1</span>
+                      What is a Patent Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-1"
+                  class="collapse"
+                  aria-labelledby="faqHeading-1"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      Patent information collected for a specific purpose of
+                      use, and assembled, analyzed and depicted in a visual form
+                      of presentation such as a chart, graph or table.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-header" id="faqHeading-2">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-2"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-2"
+                      onclick="toggleCardBody(2)"
+                    >
+                      <span class="badge">2</span>
+                      What are the features of Patent Maps?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-2"
+                  class="collapse"
+                  aria-labelledby="faqHeading-2"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      1. A Patent Map is based on patent information<br />
+                      2. A Patent Map has a clear purpose of use. <br />
+                      3. A Patent Map consists of appropriate patent information
+                      for the purpose of use.<br />
+                      4. A Patent Map contains organized patent information.
+                      <br />
+                      5. A Patent Map presents information visually.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-header" id="faqHeading-3">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-3"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-3"
+                      onclick="toggleCardBody(3)"
+                    >
+                      <span class="badge">3</span>
+                      What is the use of a Patent Map in business?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-3"
+                  class="collapse"
+                  aria-labelledby="faqHeading-3"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      1. R&D section.<br />
+                      2. Intellectual property management section. <br />
+                      3. Licensing section.<br />
+                      4. Section in charge of countermeasures against
+                      infringements.<br />
+                      5. Corporate strategy section.<br />
+                      6. Human resources section.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-header" id="faqHeading-4">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-4"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-4"
+                      onclick="toggleCardBody(4)"
+                    >
+                      <center>
+                        <span class="badge">4</span>
+                        What are the Methods of Patent-Map-Based Analysis?
+                      </center>
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-4"
+                  class="collapse"
+                  aria-labelledby="faqHeading-4"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      1. Analytical Method.<br />
+                      2. Qualitative Analysis.<br />
+                      3. Quantitative Analysis.
+                      <br />
+                      4. Index Analysis.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-5">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-5"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-5"
+                      onclick="toggleCardBody(5)"
+                    >
+                      <span class="badge">5</span>
+                      What is Qualitative Analysis?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-5"
+                  class="collapse"
+                  aria-labelledby="faqHeading-5"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      Qualitative Analysis is used to analyze the contents,
+                      such as the technical content, of individual patent
+                      documents and the results often contain relevant
+                      individual patent document numbers.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-6">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-6"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-6"
+                      onclick="toggleCardBody(6)"
+                    >
+                      <span class="badge">6</span>
+                      What is Quantitative Analysis?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-6"
+                  class="collapse"
+                  aria-labelledby="faqHeading-6"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      Quantitative Analysis involves forming a cluster of
+                      patents as a parent population for a specific category of
+                      patents from the beginning, and then further segmenting or
+                      stratifying the patents for quantitatively analyzing them.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-7">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-7"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-7"
+                      onclick="toggleCardBody(7)"
+                    >
+                      <span class="badge">7</span>
+                      What is Ranking Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-7"
+                  class="collapse"
+                  aria-labelledby="faqHeading-7"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Ranking Map presents the ranking of the number of
+                      patents filed by technical element or by right-holder or
+                      applicant.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-header" id="faqHeading-8">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-8"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-8"
+                      onclick="toggleCardBody(8)"
+                    >
+                      <span class="badge">8</span>
+                      What is Portion Rate Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-8"
+                  class="collapse"
+                  aria-labelledby="faqHeading-8"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Portion Rate Map is a type of quantitative analysis that
+                      displays the frequency of patent citations for different
+                      regions of a technology space.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-9">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-9"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-9"
+                      onclick="toggleCardBody(9)"
+                    >
+                      <span class="badge">9</span>
+                      What is Share Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-9"
+                  class="collapse"
+                  aria-labelledby="faqHeading-9"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Share Map shows who filed an application for a patent
+                      relating to a specific technology. It is also used to
+                      indicate the distribution of applications filed by
+                      technical element which the applications relate to.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-10">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-10"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-10"
+                      onclick="toggleCardBody(10)"
+                    >
+                      <span class="badge">10</span>
+                      What is Time Series Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-10"
+                  class="collapse"
+                  aria-labelledby="faqHeading-10"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Time Series Map is one of the most basic types of Patent Maps. 
+                      It is used to collect patent documents filed by a particular right-holder, 
+                      arrange them by year of filing, and plot the number of patents or patent applications over time.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-11">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-11"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-11"
+                      onclick="toggleCardBody(11)"
+                    >
+                      <span class="badge">11</span>
+                      What is Twin Peak Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-11"
+                  class="collapse"
+                  aria-labelledby="faqHeading-11"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Twin Peak Map highlights the time lag between the 
+                      period of a rapid increase and the peak period with 
+                      respect to technological development of the relevant art. 
+                      A map built on twin peak analysis is commonly used and 
+                      compares favorably with a Time Series Map in terms of capacity.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-12">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-12"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-12"
+                      onclick="toggleCardBody(12)"
+                    >
+                      <span class="badge">12</span>
+                      What is Bar Chart?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-12"
+                  class="collapse"
+                  aria-labelledby="faqHeading-12"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Bar Chart is a type of visual representation used to
+                      display the number of patents in different categories or
+                      subcategories.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-13">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-13"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-13"
+                      onclick="toggleCardBody(13)"
+                    >
+                      <span class="badge">13</span>
+                      What is Heat Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-13"
+                  class="collapse"
+                  aria-labelledby="faqHeading-13"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Heat Map in patent mapping is a visual representation of
+                      the density of patents in a particular technology area or
+                      industry. It uses color-coding to display the
+                      concentration of patents in specific geographic regions or
+                      assignee organizations.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-14">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-14"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-14"
+                      onclick="toggleCardBody(14)"
+                    >
+                      <span class="badge">14</span>
+                      What is Scatter Chart?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-14"
+                  class="collapse"
+                  aria-labelledby="faqHeading-14"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Scatter Chart is a type of chart used in patent mapping
+                      to visualize the relationship between two variables. By
+                      using a scatter chart, it is possible to identify clusters
+                      of related patents and to visualize the level of citation
+                      activity for each cluster. This can provide insights into
+                      the technological trends and the competitive landscape of
+                      a particular field.
+                    </p>
+                  </div>
+                </div>
+                <div class="card-header" id="faqHeading-15">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-15"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-15"
+                      onclick="toggleCardBody(15)"
+                    >
+                      <span class="badge">15</span>
+                      What is Word Cloud Map?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-15"
+                  class="collapse"
+                  aria-labelledby="faqHeading-15"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      A Word Cloud in patent mapping is a visualization
+                      technique that displays the most frequently occurring
+                      words in a patent database. The words are arranged in a
+                      cloud-like shape, with the more frequently occurring words
+                      appearing larger in size and the less frequently occurring
+                      words appearing smaller.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-header" id="faqHeading-16">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-16"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-16"
+                      onclick="toggleCardBody(16)"
+                    >
+                      <span class="badge">16</span>
+                      How can I sign up?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-16"
+                  class="collapse"
+                  aria-labelledby="faqHeading-16"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      Input a valid username and email address in the required fields of the form, and click "Sign up" button to generate your password. Please remember to copy your password and store it in a safe location. 
+                    </p>
+                  </div>
+                </div>
+
+                <div class="card-header" id="faqHeading-17">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-17"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-17"
+                      onclick="toggleCardBody(17)"
+                    >
+                      <span class="badge">17</span>
+                      How can I sign in?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-17"
+                  class="collapse"
+                  aria-labelledby="faqHeading-17"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      Input your registered username and the generated password in the required fields of the form, and click "Sign in" button.
+                    </p>
+                  </div>
+                </div> 
+                
+
+
+                <div class="card-header" id="faqHeading-18">
+                  <div class="mb-0">
+                    <h5
+                      class="faq-title"
+                      data-toggle="collapse"
+                      data-target="#faqCollapse-18"
+                      data-aria-expanded="true"
+                      data-aria-controls="faqCollapse-18"
+                      onclick="toggleCardBody(18)"
+                    >
+                      <span class="badge">18</span>
+                      How can I reset my password?
+                    </h5>
+                  </div>
+                </div>
+                <div
+                  id="faqCollapse-18"
+                  class="collapse"
+                  aria-labelledby="faqHeading-18"
+                  data-parent="#accordion"
+                >
+                  <div class="card-body">
+                    <p style="font-size: 30px">
+                      Input your registered username in the required field of the form and click "Forgot your password?" button, a new generated password will pop up on the screen. Please be sure to copy this password from the pop-up message and store it in a safe location.
+                    </p>
+                  </div>
+                </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleCardBody(index) {
+        var cardBody = document.getElementById("faqCollapse-" + index);
+        cardBody.classList.toggle("show");
+      }
+    </script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+      $(function () {
+        $("a").each(function () {
+          if ($(this).prop("href") == window.location.href) {
+            $(this).addClass("current");
+          }
+        });
+      });
+    </script>
+    <!-- FAQ ENDS -->
+    <!-- footer starts-->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>Yıldız, Çırağan Cd., 34349 Beşiktaş/İstanbul</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>+90 124 451 566</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>mail@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2023, All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends-->
+  </body>
+</html>

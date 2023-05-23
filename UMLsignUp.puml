@@ -1,0 +1,39 @@
+@startuml
+
+package "HTML" {
+   component "<!DOCTYPE html>" as html
+  component "Bootstrap.CSS" as bootstrap
+  component "Login.CSS" as loginCss
+  component "JavaScript" as javascript
+  component "Generate Password Function" as generatePasswordFunction
+  component "Visibility Function" as VisibilityFunction
+  component "Login Function" as loginFunction
+  component "Reset Password Function" as sendPasswordFunction
+}
+
+package "HTML Form" {
+  component "Form" as Form
+  component "Username Input" as usernameInput
+  component "Email Input" as emailInput
+  component "Password Input" as passwordInput
+  component "Sign Up Button" as signUpButton
+  component "Eye Icon" as eyeIcon
+  component "Sign In Button" as signInButton
+}
+
+bootstrap --> html
+loginCss --> html
+javascript --> html
+generatePasswordFunction --> html
+VisibilityFunction -->html
+loginFunction --> html
+sendPasswordFunction --> html
+
+usernameInput -->  Form
+emailInput --> Form
+passwordInput -->  Form
+signUpButton -->  Form
+eyeIcon -->  Form
+signInButton -->  Form
+
+@enduml

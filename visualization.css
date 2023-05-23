@@ -1,0 +1,380 @@
+/*patent starts*/
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.lp {
+  background: #fff;
+  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.1);
+  max-width: 1550px;
+  height: 1000px;
+  margin: auto;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transform: scale(0.9);
+}
+
+/*Col*/
+.col:first-of-type {
+  width: 60%;
+  height: 100%;
+  padding: 0 48px 0 56px;
+  display: flex;
+}
+.col:last-of-type {
+  width: 70%;
+  height: 70%;
+}
+
+/*Text*/
+.blog__content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+h1 {
+  color: #230445;
+  font-size: 40px;
+  width: 72%;
+  margin: 56px 0;
+  align-content: center;
+}
+.blog__mainText {
+  display: flex;
+  justify-content: space-between;
+}
+.blog__mainText p {
+  color: #230445;
+  font-family: sans-serif;
+  font-size: 24px;
+  line-height: 1.5;
+  text-align: justify;
+  width: 100%;
+  margin: 5px;
+}
+.blog__mainText p:first-of-type {
+  padding: 0 24px 0 0;
+}
+span.blog__mainText__letter {
+  color: #230445;
+  float: left;
+  font-size: 56px;
+  line-height: 45px;
+  padding: 6px 8px 0 3px;
+}
+/*Image*/
+.blog__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/*patent end*/
+
+@media screen and (max-width: 945px) {
+  .lp {
+    height: 100%;
+    flex-direction: column;
+  }
+  .col:last-of-type {
+    width: 100%;
+    height: 300px;
+    margin: 56px 0 0;
+  }
+}
+@media screen and (max-width: 645px) {
+  .blog__mainText {
+    flex-direction: column;
+  }
+  .blog__mainText p {
+    width: 100%;
+    margin: 0 0 16px;
+    padding: 0 !important;
+  }
+  .col:first-of-type {
+    padding: 0;
+  }
+}
+
+.containerbox {
+  max-width: 1280px;
+  margin: auto;
+  padding: 10px;
+}
+.nav-label {
+  color: #e8eddf;
+  font-size: 22px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-content {
+  margin-top: 60px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: block;
+  margin: 0 auto;
+  height: 1000px;
+}
+iframe {
+  width: "100%";
+  height: "100%";
+}
+/**/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1;
+}
+
+/* Generic styling */
+
+.content-chart {
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a:focus {
+  outline: 2px dashed #f7f7f7;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.administration a {
+  display: block;
+  background: #ccc;
+  border: 3px solid #230445;
+  text-align: center;
+  overflow: hidden;
+  font-size: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  height: 70px;
+  margin-bottom: -26px;
+  box-shadow: 4px 4px 9px -4px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all linear 0.1s;
+  -moz-transition: all linear 0.1s;
+  transition: all linear 0.1s;
+}
+
+ul a span {
+  top: 50%;
+  margin-top: -0.7em;
+  display: block;
+}
+
+/*
+ 
+ */
+
+.administration > li > a {
+  width: 50%;
+  margin-bottom: 25px;
+}
+
+.director > li > a {
+  width: 70%;
+  margin: 0 auto 0px auto;
+}
+
+.subdirector:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 250px;
+  background: #230445;
+  left: 45.45%;
+  position: relative;
+}
+
+.subdirector,
+.departments {
+  position: absolute;
+  width: 100%;
+}
+
+.subdirector > li:first-child,
+.departments > li:first-child {
+  width: 18.59894921190893%;
+  height: 64px;
+  margin: 0 auto 92px auto;
+  padding-top: 25px;
+  border-bottom: 4px solid #230445;
+  z-index: 1;
+}
+.subdirector > li:last-child,
+.departments > li:last-child {
+  width: 40%;
+  height: 64px;
+  margin: 0 auto 92px auto;
+  padding-top: 25px;
+  border-bottom: 4px solid #230445; /*here*/
+  z-index: 1;
+}
+.subdirector > li:first-child {
+  float: right;
+  right: 27.2%;
+  border-left: 4px solid #230445;
+}
+.subdirector > li:last-child {
+  float: right;
+  right: 37.2%;
+  border-right: 4px solid #230445;
+}
+
+.subdirector > li:first-child a,
+.departments > li:first-child a {
+  width: 100%;
+}
+.subdirector > li:last-child a,
+.departments > li:last-child a {
+  width: 500px;
+}
+.subdirector > li:first-child a {
+  width: 500px;
+  left: 25px;
+}
+
+.departments > li:last-child a {
+  width: 500px;
+  right: 2px;
+}
+
+.subdirector > li:last-child a {
+  width: 500px;
+  left: -80px;
+}
+
+.departments > li:first-child a {
+  width: 500px;
+  right: 5px;
+}
+
+.department:first-child,
+.departments li:nth-child(2) {
+  margin-left: 0;
+  clear: left;
+}
+.department:last-child,
+.departments li:nth-child(2) {
+  margin-left: 0;
+  clear: left;
+}
+
+.departments:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 81.1%;
+  height: 22px;
+  margin: 0 auto;
+  top: 130px;
+  left: 9.1%;
+}
+
+.department:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 22px;
+  z-index: 1;
+  top: -22px;
+  left: 50%;
+  margin-left: -4px;
+}
+
+.department {
+  width: 18.59894921190893%;
+  float: left;
+  margin-left: 1.751313485113835%;
+  margin-right: 1.751313485113835%;
+  margin-bottom: 60px;
+}
+
+.lt-ie8 .department {
+  width: 18.25%;
+}
+
+.department > a {
+  margin: 0 0 -26px -4px;
+  z-index: 1;
+}
+
+.department > a:hover {
+  height: 80px;
+}
+
+.department > ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.department li {
+  padding-left: 25px;
+  width: 350px;
+  height: 90px;
+}
+
+.department li a {
+  background: #230445;
+  top: 48px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  vertical-align: middle;
+  right: -1px;
+}
+
+.department li a:hover {
+  box-shadow: 8px 8px 9px -4px rgba(0, 0, 0, 0.1);
+  height: 80px;
+  width: 95%;
+  top: 39px;
+  background-image: none !important;
+}
+
+/* Department/ section colors */
+.department.dep-a a,
+.department.dep-b a {
+  background: #7b688f;
+}
+
+.all {
+  padding-bottom: 550px;
+}
+
+/**/

@@ -1,0 +1,101 @@
+.faq-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq-title h2 {
+  position: relative;
+  margin-bottom: 45px;
+  display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.faq-title h2::before {
+  content: "";
+  position: absolute;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 2px;
+  background: #230445;
+  bottom: -25px;
+}
+
+.faq-title p {
+  padding: 0 190px;
+  margin-bottom: 10px;
+}
+
+.faq .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #e9e5ec;
+  border-bottom: 1px dashed #cee1f8;
+}
+
+.faq .card .card-header {
+  padding: 0px;
+  border: none;
+  background: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: flex;
+}
+
+.faq .card .card-header .badge {
+  background-color: #9383a3;
+  color: white;
+  margin-right: 10px;
+}
+
+.faq .card .card-header:hover {
+  background: #9383a3;
+  padding-left: 10px;
+}
+
+.faq .card .card-header .faq-title {
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: bold;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #230445;
+  text-decoration: none !important;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.card-body {
+  font-family: "Open Sans", sans-serif;
+  padding: 30px;
+  padding-left: 20px;
+  padding-bottom: 16px;
+  border-top: 1px solid #230445;
+  overflow: hidden;
+  transition: visibility 0s, height 0.3s;
+  background-color: #c1b8ca;
+}
+
+.faq .card .card-body.show {
+  visibility: visible;
+  height: auto;
+  overflow: visible;
+}
+.col-md-6 {
+  width: 1525px;
+}
