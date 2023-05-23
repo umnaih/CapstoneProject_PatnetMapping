@@ -54,7 +54,7 @@ nav {
 }
 
 .welcome-message h1 {
-  font-size: 50px;
+  font-size: 35px;
   font-style: italic;
   font-weight: bold;
   padding: 20px;
@@ -63,7 +63,7 @@ nav {
 }
 h1 {
   color: #0b090a;
-  font-size: 50px;
+  font-size: 35px;
   font-style: italic;
   font-weight: bold;
   padding: 20px;
@@ -75,7 +75,7 @@ h1 {
   padding: 50px;
 }
 .welcome-message p {
-  font-size: 45px;
+  font-size: 25px;
   margin: 0;
   padding: 5px;
   margin-bottom: 20px;
@@ -93,7 +93,7 @@ h1 {
   text-align: center;
 }
 p {
-  font-size: 45px;
+  font-size: 25px;
   margin-bottom: 20px;
   color: #0b090a;
   padding: px;
