@@ -15,8 +15,22 @@
   </head>
   <body>
     <!-- navbar area starts-->
-    <nav class="navbar navbar-expand-lg" style="background-color: #230445">
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #230445"
+    >
       <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
@@ -24,26 +38,24 @@
                 class="nav-link"
                 aria-current="page"
                 href="./index.html"
-                style="color: #e8eddf"
+                style="color: #e8eddf; font-size: 20px"
+                >Home</a
               >
-                Home
-              </a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
                 aria-current="page"
-                href="./Home.html#ourServis"
-                style="color: #e8eddf"
+                href="./index.html#ourServis"
+                style="color: #e8eddf; font-size: 20px"
+                >Our Services</a
               >
-                Our Services
-              </a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="./Home.html#aboutUs"
-                style="color: #e8eddf"
+                href="./index.html#aboutUs"
+                style="color: #e8eddf; font-size: 20px"
                 >About Us</a
               >
             </li>
@@ -51,12 +63,12 @@
               <a
                 class="nav-link"
                 href="./visualization.html"
-                style="color: #e8eddf"
+                style="color: #e8eddf; font-size: 20px"
                 >Visualization</a
               >
             </li>
           </ul>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -64,6 +76,7 @@
                 href="./Sign_Up.html"
                 style="
                   color: #e8eddf;
+                  font-size: 18px;
                   margin-left: 20px;
                   border: 1px solid #e8eddf;
                   padding: 10px;
@@ -81,30 +94,37 @@
     <!-- second navbar area starts -->
     <nav class="navbar navbar-expand-lg" style="background-color: #e9e5ec">
       <div class="container-fluid">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
                 class="nav-link"
-                aria-current="page"
                 href="./RankingMap.html"
-                style="color: #230445; padding: 8px 15px"
-                >Ranking Map</a
-              >
+                style="color: #230445"
+                >Ranking Map
+              </a>
             </li>
             <li class="nav-item">
               <a
                 class="nav-link"
                 href="./PortionRateMap.html"
-                style="color: #230445; padding: 8px 15px"
+                style="color: #230445"
                 >Portion Rate Map</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./ShareMap.html"
-                style="color: #230445; padding: 8px 15px"
+              <a class="nav-link" href="./ShareMap.html" style="color: #230445"
                 >Share Map</a
               >
             </li>
@@ -112,7 +132,7 @@
               <a
                 class="nav-link"
                 href="./TimeSeries.html"
-                style="color: #230445; padding: 8px 15px"
+                style="color: #230445"
                 >Time Series</a
               >
             </li>
@@ -120,23 +140,17 @@
               <a
                 class="nav-link"
                 href="./TwinPeakMap.html"
-                style="color: #230445; padding: 8px 15px"
+                style="color: #230445"
                 >Twin Peak Map</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./BarChart.html"
-                style="color: #230445; padding: 8px 15px"
+              <a class="nav-link" href="./BarChart.html" style="color: #230445"
                 >Bar Chart</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="./Heat Map.html"
-                style="color: #230445; padding: 8px 15px"
+              <a class="nav-link" href="./Heat Map.html" style="color: #230445"
                 >Heat Map</a
               >
             </li>
@@ -144,7 +158,7 @@
               <a
                 class="nav-link"
                 href="./ScatterChart.html"
-                style="color: #230445; padding: 8px 15px"
+                style="color: #230445"
                 >Scatter Chart</a
               >
             </li>
@@ -152,12 +166,10 @@
               <a
                 class="nav-link"
                 href="./WordCloudMap.html"
-                style="color: #230445; padding: 8px 15px"
-              >
-                Word Cloud Map</a
+                style="color: #230445"
+                >Word Cloud Map</a
               >
             </li>
-
             <li class="nav-item">
               <a
                 class="nav-link"
@@ -176,6 +188,17 @@
         </div>
       </div>
     </nav>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script>
+      $(function () {
+        $("a").each(function () {
+          if ($(this).prop("href") == window.location.href) {
+            $(this).addClass("current");
+          }
+        });
+      });
+    </script>
     <!-- second navbar area ends -->
     <!-- FAQ starts -->
     <section class="faq-section">
@@ -210,7 +233,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       Patent information collected for a specific purpose of
                       use, and assembled, analyzed and depicted in a visual form
                       of presentation such as a chart, graph or table.
@@ -240,7 +263,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       1. A Patent Map is based on patent information<br />
                       2. A Patent Map has a clear purpose of use. <br />
                       3. A Patent Map consists of appropriate patent information
@@ -274,7 +297,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       1. R&D section.<br />
                       2. Intellectual property management section. <br />
                       3. Licensing section.<br />
@@ -310,7 +333,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       1. Analytical Method.<br />
                       2. Qualitative Analysis.<br />
                       3. Quantitative Analysis.
@@ -341,7 +364,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       Qualitative Analysis is used to analyze the contents,
                       such as the technical content, of individual patent
                       documents and the results often contain relevant
@@ -371,7 +394,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       Quantitative Analysis involves forming a cluster of
                       patents as a parent population for a specific category of
                       patents from the beginning, and then further segmenting or
@@ -401,7 +424,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Ranking Map presents the ranking of the number of
                       patents filed by technical element or by right-holder or
                       applicant.
@@ -431,7 +454,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Portion Rate Map is a type of quantitative analysis that
                       displays the frequency of patent citations for different
                       regions of a technology space.
@@ -460,7 +483,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Share Map shows who filed an application for a patent
                       relating to a specific technology. It is also used to
                       indicate the distribution of applications filed by
@@ -490,7 +513,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Time Series Map is one of the most basic types of Patent Maps. 
                       It is used to collect patent documents filed by a particular right-holder, 
                       arrange them by year of filing, and plot the number of patents or patent applications over time.
@@ -519,7 +542,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Twin Peak Map highlights the time lag between the 
                       period of a rapid increase and the peak period with 
                       respect to technological development of the relevant art. 
@@ -550,7 +573,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Bar Chart is a type of visual representation used to
                       display the number of patents in different categories or
                       subcategories.
@@ -579,7 +602,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Heat Map in patent mapping is a visual representation of
                       the density of patents in a particular technology area or
                       industry. It uses color-coding to display the
@@ -610,7 +633,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Scatter Chart is a type of chart used in patent mapping
                       to visualize the relationship between two variables. By
                       using a scatter chart, it is possible to identify clusters
@@ -643,7 +666,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       A Word Cloud in patent mapping is a visualization
                       technique that displays the most frequently occurring
                       words in a patent database. The words are arranged in a
@@ -676,7 +699,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       Input a valid username and email address in the required fields of the form, and click "Sign up" button to generate your password. Please remember to copy your password and store it in a safe location. 
                     </p>
                   </div>
@@ -704,7 +727,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       Input your registered username and the generated password in the required fields of the form, and click "Sign in" button.
                     </p>
                   </div>
@@ -734,7 +757,7 @@
                   data-parent="#accordion"
                 >
                   <div class="card-body">
-                    <p style="font-size: 30px">
+                    <p style="font-size: 20px">
                       Input your registered username in the required field of the form and click "Forgot your password?" button, a new generated password will pop up on the screen. Please be sure to copy this password from the pop-up message and store it in a safe location.
                     </p>
                   </div>

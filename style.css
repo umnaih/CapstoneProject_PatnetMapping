@@ -15,8 +15,8 @@ nav {
   padding: 5px !important;
 }
 .nav-item {
-  font-size: 30px;
-  padding-left: 5px;
+  font-size: 15px;
+  padding-left: 2px;
   padding-bottom: 5px;
 }
 #navbar-toggler {
@@ -149,12 +149,12 @@ img {
 }
 .single-cta i {
   color: #200060;
-  font-size: 40px;
+  font-size: 20px;
   float: left;
   margin-top: 2px;
 }
 .cta-text {
-  padding-left: 15px;
+  padding-left: 10px;
   display: inline-block;
 }
 .cta-text h4 {
