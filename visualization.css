@@ -376,17 +376,42 @@ ul a span {
 .all {
   padding-bottom: 100px;
 }
-@media screen and (max-width: 768px) {
-  /* Adjust styles for tablet and mobile screens */
-  .chart-container {
-    padding-bottom: 100%; /* Adjust aspect ratio as needed */
-  }
-}
 
-@media screen and (max-width: 576px) {
-  /* Adjust styles for mobile screens */
-  .chart-container {
-    padding-bottom: 100%; /* Adjust aspect ratio as needed */
+@media screen and (max-width: 1076px) {
+  .all {
+    padding-bottom: 500px;
+  }
+  #secondlp {
+    height: 750px;
+  }
+  .administration a {
+    font-size: 19px;
+    height: 55px;
+    margin-bottom: -26px;
+  }
+
+  .subdirector > li:first-child a {
+    width: 200px;
+    left: 25px;
+  }
+
+  .departments > li:last-child a {
+    width: 100px;
+    right: 2px;
+  }
+
+  .subdirector > li:last-child a {
+    width: 200px;
+    left: -50px;
+  }
+  .blog__mainText {
+    flex-direction: column;
+  }
+  .blog__mainText p {
+    width: 100%;
+    line-height: 23px;
+    margin: 0 0 16px;
+    padding: 0 !important;
   }
 }
 /**/
