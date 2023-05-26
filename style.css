@@ -35,14 +35,20 @@ nav {
   background-position: 20%;
 }
 /* home end*/
-#acess {
-  padding-top: 20px;
-  height: 160vh;
-  width: 100%;
-  background-image: url("./data/access3.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 100%;
+
+@media (max-width: 768px) {
+  /* Styles for tablets and mobile devices */
+  #access {
+    height: 100vh;
+    background-position: center;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Styles for mobile devices */
+  #access {
+    height: auto;
+  }
 }
 /* welcome message*/
 .welcome-message {
