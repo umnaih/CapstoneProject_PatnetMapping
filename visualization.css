@@ -101,7 +101,7 @@ span.blog__mainText__letter {
 .containerbox {
   max-width: 1280px;
   margin: auto;
-  padding: 10px;
+  padding-bottom: 35px;
 }
 .nav-label {
   color: #e8eddf;
@@ -379,7 +379,7 @@ ul a span {
 @media screen and (max-width: 768px) {
   /* Adjust styles for tablet and mobile screens */
   .chart-container {
-    padding-bottom: 75%; /* Adjust aspect ratio as needed */
+    padding-bottom: 100%; /* Adjust aspect ratio as needed */
   }
 }
 
