@@ -99,6 +99,10 @@ Here are some significant insights gained from the dataset analysis:
 
 5. **Diverse Representation**: The dataset includes patent data from 35 different countries, showcasing the global reach of patent activities.
 
-# Patent Dataset Analysis
+## Importent Diagrams
 
-[!Framework Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture2-%20website%20structure%20diagram.png)
+[Framework Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture1-Freamwork%20diagram.png)
+
+[Website Structure Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture2-Website%20structure%20diagram.png)
+
+[List Of The Countries That Were Visualized](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture3-List%20of%20the%20Countries%20That%20Were%20Visualized.png)
