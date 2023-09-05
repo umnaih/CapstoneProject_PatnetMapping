@@ -101,4 +101,4 @@ Here are some significant insights gained from the dataset analysis:
 
 # Patent Dataset Analysis
 
-[[Framework Diagram](./CapstoneProject_PatnetMapping/blob/main/Picture1-Freamwork%20diagram.png)]
+[!Framework Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture2-%20website%20structure%20diagram.png)
