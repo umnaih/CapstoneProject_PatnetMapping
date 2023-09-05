@@ -101,7 +101,8 @@ Here are some significant insights gained from the dataset analysis:
 
 # Patent Dataset Analysis
 
-[![Framework Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/raw/main/Picture1.png)](https://github.com/umnaih/CapstoneProject_PatnetMapping)
+[![Framework Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture1-Freamwork%20diagram.png)]
+
 [![Website Structure Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/raw/main/Picture2.png)](https://github.com/umnaih/CapstoneProject_PatnetMapping)
 [![List Of The Countries That Were Visualized](https://github.com/umnaih/CapstoneProject_PatnetMapping/raw/main/Picture3.png)](https://github.com/umnaih/CapstoneProject_PatnetMapping)
 [![Patent Country Distribution by using Percentage-based Pie Chart](https://github.com/umnaih/CapstoneProject_PatnetMapping/raw/main/Picture6.png)](https://github.com/umnaih/CapstoneProject_PatnetMapping)
