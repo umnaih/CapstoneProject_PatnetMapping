@@ -103,12 +103,7 @@ Here are some significant insights gained from the dataset analysis:
 
 [Framework Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture1-Framework%20diagram.png)
 
-[Website Structure Diagram](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture2-website%20structure%20diagram.png)
 
-[List Of The Countries That Were Visualized](https://github.com/umnaih/CapstoneProject_PatnetMapping/blob/main/Picture3-List%20Of%20The%20Countries%20That%20Were%20Visualized.png)
-
-[![Patent Country Distribution by using Percentage-based Pie Chart](https://github.com/umnaih/CapstoneProject_PatnetMapping/raw/main/Picture6.png)](https://github.com/umnaih/CapstoneProject_PatnetMapping)
-[![Patent Country Distribution By Using Percentage-Based Doughnut Chart](https://github.com/umnaih/CapstoneProject_PatnetMapping/raw/main/Picture7.png)](https://github.com/umnaih/CapstoneProject_PatnetMapping)
 
 
 ## Conclusion
